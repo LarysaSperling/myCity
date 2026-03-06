@@ -1,69 +1,72 @@
-export const districtsData = [
+export const initialCategories = [
   {
-    id: "center",
-    name: "Центральный район",
-    description: "Исторический центр города с архитектурными памятниками",
+    id: "parks",
+    name: "Parks",
+    icon: "🌳",
     places: [
       {
-        id: "park",
-        name: "Городской парк",
-        description:
-          "Красивый парк с фонтаном и вековыми деревьями. Отличное место для прогулок и отдыха.",
-        image: "🏞️",
+        id: "gorky",
+        name: "Gorky Park",
+        description: "Central park of culture and leisure",
+        image: "🌲",
+        todos: [],
       },
       {
-        id: "museum",
-        name: "Краеведческий музей",
-        description:
-          "История города с древних времен до наших дней. Более 5000 экспонатов.",
-        image: "🏛️",
-      },
-      {
-        id: "theater",
-        name: "Драматический театр",
-        description: "Главная сцена города, где проходят спектакли и концерты.",
-        image: "🎭",
+        id: "sokolniki",
+        name: "Sokolniki",
+        description: "Large park for walking and sports",
+        image: "🍃",
+        todos: [],
       },
     ],
   },
   {
-    id: "north",
-    name: "Северный район",
-    description: "Современный спальный район с развитой инфраструктурой",
+    id: "museums",
+    name: "Museums",
+    icon: "🏛️",
     places: [
       {
-        id: "lake",
-        name: "Голубое озеро",
-        description:
-          "Живописное озеро с чистой водой. Место для отдыха и рыбалки.",
-        image: "🏖️",
-      },
-      {
-        id: "mall",
-        name: 'Торговый центр "Север"',
-        description: "Крупнейший торгово-развлекательный комплекс района.",
-        image: "🛍️",
+        id: "tretyakov",
+        name: "Tretyakov Gallery",
+        description: "Main museum of Russian art",
+        image: "🎨",
+        todos: [],
       },
     ],
   },
   {
-    id: "south",
-    name: "Южный район",
-    description: "Промышленный район с интересными историческими объектами",
+    id: "restaurants",
+    name: "Restaurants",
+    icon: "🍽️",
     places: [
       {
-        id: "factory",
-        name: "Старая фабрика",
-        description:
-          "Памятник промышленной архитектуры XIX века. Сейчас здесь музей и арт-пространство.",
-        image: "🏭",
-      },
-      {
-        id: "station",
-        name: "Железнодорожный вокзал",
-        description: "Красивое здание в стиле модерн, построенное в 1910 году.",
-        image: "🚂",
+        id: "pushkin",
+        name: "Cafe Pushkin",
+        description: "Historic restaurant of Russian cuisine",
+        image: "🥟",
+        todos: [],
       },
     ],
   },
 ];
+
+export const todosData = {
+  gorky: [
+    { id: 1, text: "Ride a bicycle", completed: false },
+    { id: 2, text: "Feed ducks at the pond", completed: true },
+    { id: 3, text: "Visit the old apartment museum", completed: false },
+  ],
+  sokolniki: [
+    { id: 1, text: "Go skiing", completed: false },
+    { id: 2, text: "Visit the rose garden", completed: false },
+  ],
+  tretyakov: [
+    { id: 1, text: "See Black Square", completed: false },
+    { id: 2, text: "Buy souvenirs", completed: true },
+  ],
+  pushkin: [
+    { id: 1, text: "Try borscht", completed: false },
+    { id: 2, text: "Book a table", completed: true },
+    { id: 3, text: "Leave a tip", completed: false },
+  ],
+};

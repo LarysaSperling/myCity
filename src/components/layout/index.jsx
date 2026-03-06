@@ -8,7 +8,7 @@ function Layout() {
 
       <header className="header">
         <div className="container">
-          <h1 className="logo">🏙️ My City</h1>
+          <h1 className="logo">✈️ Travel Planner</h1>
 
           <nav className="nav">
             <NavLink
@@ -22,12 +22,30 @@ function Layout() {
             </NavLink>
 
             <NavLink
-              to="/districts"
+              to="/categories"
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
             >
-              Districts
+              Categories
+            </NavLink>
+
+            <NavLink
+              to="/favorites"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Favorites
+            </NavLink>
+
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              About
             </NavLink>
           </nav>
         </div>
@@ -41,7 +59,7 @@ function Layout() {
 
       <footer className="footer">
         <div className="container">
-          <p>© 2026 My City. All rights reserved.</p>
+          <p>© 2026 Travel Planner. All rights reserved.</p>
         </div>
       </footer>
     </div>
